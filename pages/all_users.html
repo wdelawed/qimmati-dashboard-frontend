@@ -460,7 +460,7 @@
         <div class="col-lg-12 col-md-12 mb-md-0 mb-4">
           <div class="card">
             <div class="card-body p-4 pb-2">
-              <a href="new_user.html"  class="btn bg-gradient-primary"> إضافة مستخدم</a>
+              <a href="new_user.html" class="btn bg-gradient-primary"> إضافة مستخدم</a>
             </div>
           </div>
         </div>
@@ -481,11 +481,11 @@
             </div>
             <div class="card-body p-0 pb-2">
               <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0">
+                <table class="table align-items-center mb-0" id="allContactsTable">
                   <thead>
                     <tr>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">#</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">الاسم</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 sorting">الاسم</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">البريد الإلكتروني
                       </th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">المجموعة</th>
@@ -863,30 +863,25 @@
                 </table>
 
                 <div class="pagination-container justify-content-center">
-                  <ul class="pagination pagination-warning">
+                  <ul class="pagination pagination-primary">
                     <li class="page-item">
                       <a class="page-link" href="javascript:;" aria-label="Previous">
-                        <span aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                        <span aria-hidden="true"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
                       </a>
                     </li>
-                    <li class="page-item active">
+                    <li class="page-item ">
                       <a class="page-link" href="javascript:;">1</a>
                     </li>
-                    <li class="page-item">
+                    <li class="page-item active">
                       <a class="page-link" href="javascript:;">2</a>
                     </li>
                     <li class="page-item">
                       <a class="page-link" href="javascript:;">3</a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link" href="javascript:;">4</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="javascript:;">5</a>
-                    </li>
+                   
                     <li class="page-item">
                       <a class="page-link" href="javascript:;" aria-label="Next">
-                        <span aria-hidden="true"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        <span aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
                       </a>
                     </li>
                   </ul>
@@ -1200,6 +1195,14 @@
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
+  <script src="../assets/js/plugins/datatables.js"></script>
+
+  <!-- <script type="text/javascript">
+    const dataTableBasic = new simpleDatatables.DataTable("#allContactsTable", {
+      searchable: false,
+      fixedHeight: false
+    }); -->
+  </script>
 </body>
 
 </html>
