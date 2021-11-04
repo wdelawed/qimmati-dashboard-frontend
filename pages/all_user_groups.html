@@ -83,9 +83,10 @@
         <li class="nav-item">
           <a data-bs-toggle="collapse" href="#orders" class="nav-link active" aria-controls="orders" role="button"
             aria-expanded="false">
+
             <span class="nav-link-text ms-1">الطلبات</span>
           </a>
-          <div class="collapse " id="orders">
+          <div class="collapse" id="orders">
             <ul class="nav ms-4 ps-3">
               <li class="nav-item">
                 <a class="nav-link" href="../../pages/dashboards/default.html">
@@ -116,14 +117,14 @@
                   <span class="sidenav-normal"> كل المستخدمين </span>
                 </a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link active" href="new_user.html">
+              <li class="nav-item">
+                <a class="nav-link" href="new_user.html">
                   <span class="sidenav-mini-icon"> D </span>
                   <span class="sidenav-normal">مستخدم جديد</span>
                 </a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link " href="all_user_groups.html">
+              <li class="nav-item active">
+                <a class="nav-link active" href="#">
                   <span class="sidenav-mini-icon"> A </span>
                   <span class="sidenav-normal"> مجموعات المستخدمين </span>
                 </a>
@@ -340,13 +341,13 @@
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 ">
             <li class="breadcrumb-item text-sm ps-2"><a class="opacity-5 text-dark" href="javascript:;"> لوحة التحكم</a>
             </li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">المستخدمين</li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">مجموعات المستخدمين</li>
           </ol>
-          <h6 class="font-weight-bolder mb-0">مستخدم جديد</h6>
+          <h6 class="font-weight-bolder mb-0"> كل المجموعات</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 px-0" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
-            
+
           </div>
           <ul class="navbar-nav me-auto ms-0 justify-content-end">
             <li class="nav-item d-flex align-items-center">
@@ -455,116 +456,51 @@
     </nav>
     <!-- End Navbar -->
     <div class="container-fluid py-4">
+      <div class="row my-4 ">
+        <div class="col-lg-12 col-md-12 mb-md-0 mb-4">
+          <div class="card">
+            <div class="card-body p-4 pb-2">
+              <a href="new_user_group.html" class="btn bg-gradient-primary"> إضافة  مجموعة  </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row my-4">
-        <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
+        <div class="col-lg-12 col-md-12 mb-md-0 mb-4">
           <div class="card">
             <div class="card-header pb-0">
               <div class="row mb-3">
                 <div class="col-6">
-                  <h6>المستخدمين</h6>
+                  <h6>المجموعات</h6>
                   <p class="text-sm">
                     <i class="fa fa-check text-info" aria-hidden="true"></i>
-                    <span class="font-weight-bold ms-1">اضافة مستخدم جديد
+                    <span class="font-weight-bold ms-1">كل المجموعات
                   </p>
                 </div>
               </div>
             </div>
             <div class="card-body p-0 pb-2">
-              <div class="table-responsive">
-                <form>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6 col-lg-3">
-                        <p class="text-md">
-                          <span class="ms-1 float-start">إسم المستخدم
-                        </p>
-                      </div>
-                      <div class="col-md-6 col-sm-6 col-lg-4">
-                        <div class="form-group">
-                          <div class="input-group mb-4">
-                            <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
-                            <input class="form-control" type="text" name="username" placeholder="اسم المستخدم">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6 col-lg-3">
-                        <p class="text-md">
-                          <span class="ms-1 float-start"> البريد الالكتروني
-                        </p>
-                      </div>
-                      <div class="col-md-6 col-sm-6 col-lg-4">
-                        <div class="form-group">
-                          <div class="input-group mb-4">
-                            <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                            <input class="form-control" type="email" name="email" placeholder="البريد الإلكتروني">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6 col-lg-3">
-                        <p class="text-md">
-                          <span class="ms-1 float-start"> كلمة المرور
-                        </p>
-                      </div>
-                      <div class="col-md-6 col-sm-6 col-lg-4">
-                        <div class="form-group">
-                          <div class="input-group mb-4">
-                            <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                            <input class="form-control" type="password" name="password" placeholder="كلمة المرور">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6 col-lg-3">
-                        <p class="text-md">
-                          <span class="ms-1 float-start"> المجموعة
-                        </p>
-                      </div>
-                      <div class="col-md-6 col-sm-6 col-lg-4">
-                        <div class="form-group">
-                          <div class="input-group mb-4">
-                            <span class="input-group-text"><i class="ni ni-ungroup"></i></span>
-                            <select class="form-control" name="userGroup">
-                              <option value="1">مشرف</option>
-                              <option value="1">خدمة عملاء</option>
-                              <option value="1">مدير</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6 col-lg-3">
-
-                      </div>
-                      <div class="col-md-6 col-sm-6 col-lg-9">
-                        <button type="button" class="btn bg-gradient-primary" type="submit">إضافة</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100">
-            <div class="card-header pb-0">
-              <h6>نظرة عامة على المستخدمين</h6>
-            </div>
-            <div class="card-body p-3">
               <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0">
+                <table class="table align-items-center mb-0" id="allContactsTable">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">الاسم</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">المجموعة</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">#</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 sorting">إسم
+                        المجموعة</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">لون المجموعة
+                      </th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">الدور</th>
                       <th class="text-secondary opacity-7"></th>
+                      <th class="text-secondary opacity-7"></th>
+                      <th class="text-secondary opacity-7">
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                            </div>
+                          </div>
+                        </div>
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
@@ -572,26 +508,23 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">مستخدم معين </h6>
+                            <h6 class="mb-0 text-sm"> 1 </h6>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">مدير</p>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                          </div>
+                        </div>
                       </td>
-
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                          data-original-title="Edit user">
-                          تعديل
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">مستخدم اخر </h6>
+                            <span class="page-item" >
+                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
+                            </span>
                           </div>
                         </div>
                       </td>
@@ -604,32 +537,46 @@
                           data-original-title="Edit user">
                           تعديل
                         </a>
+
+                      </td>
+                      <td>
+                        <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
+                          data-original-title=" ">
+                          حذف المجموعة
+                        </a>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                            </div>
+                          </div>
+                        </div>
+
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">مستخدم معين </h6>
+                            <h6 class="mb-0 text-sm"> 1 </h6>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">مدير</p>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                          </div>
+                        </div>
                       </td>
-
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                          data-original-title="Edit user">
-                          تعديل
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">مستخدم اخر </h6>
+                            <span class="page-item" >
+                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
+                            </span>
                           </div>
                         </div>
                       </td>
@@ -642,10 +589,318 @@
                           data-original-title="Edit user">
                           تعديل
                         </a>
+
+                      </td>
+                      <td>
+                        <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
+                          data-original-title=" ">
+                          حذف المجموعة
+                        </a>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"> 1 </h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <span class="page-item" >
+                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
+                            </span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">موظف</p>
+                      </td>
+
+                      <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
+                          data-original-title="Edit user">
+                          تعديل
+                        </a>
+
+                      </td>
+                      <td>
+                        <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
+                          data-original-title=" ">
+                          حذف المجموعة
+                        </a>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"> 1 </h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <span class="page-item" >
+                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
+                            </span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">موظف</p>
+                      </td>
+
+                      <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
+                          data-original-title="Edit user">
+                          تعديل
+                        </a>
+
+                      </td>
+                      <td>
+                        <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
+                          data-original-title=" ">
+                          حذف المجموعة
+                        </a>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"> 1 </h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <span class="page-item" >
+                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
+                            </span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">موظف</p>
+                      </td>
+
+                      <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
+                          data-original-title="Edit user">
+                          تعديل
+                        </a>
+
+                      </td>
+                      <td>
+                        <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
+                          data-original-title=" ">
+                          حذف المجموعة
+                        </a>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"> 1 </h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <span class="page-item" >
+                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
+                            </span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">موظف</p>
+                      </td>
+
+                      <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
+                          data-original-title="Edit user">
+                          تعديل
+                        </a>
+
+                      </td>
+                      <td>
+                        <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
+                          data-original-title=" ">
+                          حذف المجموعة
+                        </a>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"> 1 </h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <span class="page-item" >
+                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
+                            </span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">موظف</p>
+                      </td>
+
+                      <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
+                          data-original-title="Edit user">
+                          تعديل
+                        </a>
+
+                      </td>
+                      <td>
+                        <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
+                          data-original-title=" ">
+                          حذف المجموعة
+                        </a>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="6"></td>
+                      <td>
+                        <button type="button" class="btn bg-gradient-danger" type="submit"> حذف المحدد</button>
                       </td>
                     </tr>
                   </tbody>
                 </table>
+
+                <div class="pagination-container justify-content-center">
+                  <ul class="pagination pagination-primary">
+                    <li class="page-item">
+                      <a class="page-link" href="javascript:;" aria-label="Previous">
+                        <span aria-hidden="true"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                      </a>
+                    </li>
+                    <li class="page-item ">
+                      <a class="page-link" href="javascript:;">1</a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="javascript:;">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="javascript:;">3</a>
+                    </li>
+
+                    <li class="page-item">
+                      <a class="page-link" href="javascript:;" aria-label="Next">
+                        <span aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -955,6 +1210,14 @@
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
+  <script src="../assets/js/plugins/datatables.js"></script>
+
+  <!-- <script type="text/javascript">
+    const dataTableBasic = new simpleDatatables.DataTable("#allContactsTable", {
+      searchable: false,
+      fixedHeight: false
+    }); -->
+  </script>
 </body>
 
 </html>
