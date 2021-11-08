@@ -109,23 +109,23 @@
             <span class="nav-link-text ms-1">المستخدمين</span>
           </a>
 
-          <div class="collapse show" id="usersSection">
+          <div class="collapse" id="usersSection">
             <ul class="nav ms-4 ps-3">
-              <li class="nav-item ">
-                <a class="nav-link " href="all_users.html">
-                  <span class="sidenav-mini-icon"> A </span>
+              <li class="nav-item">
+                <a class="nav-link" href="all_users.html">
+                  <span class="sidenav-mini-icon"> ك </span>
                   <span class="sidenav-normal"> كل المستخدمين </span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="new_user.html">
-                  <span class="sidenav-mini-icon"> D </span>
+                  <span class="sidenav-mini-icon"> م </span>
                   <span class="sidenav-normal">مستخدم جديد</span>
                 </a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link active" href="#">
-                  <span class="sidenav-mini-icon"> A </span>
+              <li class="nav-item ">
+                <a class="nav-link " href="all_user_groups.html">
+                  <span class="sidenav-mini-icon"> م </span>
                   <span class="sidenav-normal"> مجموعات المستخدمين </span>
                 </a>
               </li>
@@ -133,10 +133,11 @@
           </div>
         </li>
         <li class="nav-item">
-          <a data-bs-toggle="collapse" href="#customerService" class="nav-link active" aria-controls="#customerService" role="button" aria-expanded="false">
+          <a data-bs-toggle="collapse" href="#customerService" class="nav-link active" aria-controls="#customerService"
+            role="button" aria-expanded="false">
             <span class="nav-link-text ms-1">خدمة العملاء</span>
           </a>
-          <div class="collapse" id="customerService">
+          <div class="collapse show" id="customerService">
             <ul class="nav ms-4 ps-3">
               <li class="nav-item ">
                 <a class="nav-link " href="new_user.html">
@@ -145,15 +146,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="cs_orders_types.html">
+                <a class="nav-link" href="cs_orders_types.html">
                   <span class="sidenav-mini-icon"> أ </span>
-                  <span class="sidenav-normal"> انواع الطلبات  </span>
+                  <span class="sidenav-normal"> أنواع الطلبات </span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " href="cs_orders_categories.html">
+              <li class="nav-item active">
+                <a class="nav-link active" href="#">
                   <span class="sidenav-mini-icon"> أ </span>
-                  <span class="sidenav-normal"> تصنيفات الطلبات  </span>
+                  <span class="sidenav-normal"> تصنيفات الطلبات </span>
                 </a>
               </li>
             </ul>
@@ -368,9 +369,9 @@
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 ">
             <li class="breadcrumb-item text-sm ps-2"><a class="opacity-5 text-dark" href="javascript:;"> لوحة التحكم</a>
             </li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">مجموعات المستخدمين</li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">خدمة العملاء</li>
           </ol>
-          <h6 class="font-weight-bolder mb-0"> كل المجموعات</h6>
+          <h6 class="font-weight-bolder mb-0"> أنواع الطلبات</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 px-0" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -486,8 +487,28 @@
       <div class="row my-4 ">
         <div class="col-lg-12 col-md-12 mb-md-0 mb-4">
           <div class="card">
+            <div class="card-header pb-0">
+              <div class="row mb-3">
+                <div class="col-6">
+                  <h6>خدمة العملاء >> تصنيفات الطلبات</h6>
+                  <p class="text-sm">
+                    <i class="fa fa-check text-info" aria-hidden="true"></i>
+                    <span class="font-weight-bold ms-1">إضافة تصنيف جديد
+                  </p>
+                </div>
+              </div>
+            </div>
             <div class="card-body p-4 pb-2">
-              <a href="new_user_group.html" class="btn bg-gradient-primary"> إضافة  مجموعة  </a>
+              <form>
+                <div class="row">
+                  <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="الاسم" />
+                  </div>
+                  <div class="col-md-9">
+                    <button type="submit" class="btn bg-gradient-primary"> إضافة </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -498,10 +519,10 @@
             <div class="card-header pb-0">
               <div class="row mb-3">
                 <div class="col-6">
-                  <h6>المجموعات</h6>
+                  <h6>خدمة العملاء</h6>
                   <p class="text-sm">
                     <i class="fa fa-check text-info" aria-hidden="true"></i>
-                    <span class="font-weight-bold ms-1">كل المجموعات
+                    <span class="font-weight-bold ms-1">تصنيفات الطلبات 
                   </p>
                 </div>
               </div>
@@ -512,11 +533,7 @@
                   <thead>
                     <tr>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">#</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 sorting">إسم
-                        المجموعة</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">لون المجموعة
-                      </th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">الدور</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 sorting">الاسم</th>
                       <th class="text-secondary opacity-7"></th>
                       <th class="text-secondary opacity-7"></th>
                       <th class="text-secondary opacity-7">
@@ -542,21 +559,9 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                            <h6 class="mb-0 text-sm">استرجاع</h6>
                           </div>
                         </div>
-                      </td>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div class="d-flex flex-column justify-content-center">
-                            <span class="page-item" >
-                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
-                            </span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">موظف</p>
                       </td>
 
                       <td class="align-middle">
@@ -569,7 +574,7 @@
                       <td>
                         <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
                           data-original-title=" ">
-                          حذف المجموعة
+                          حذف
                         </a>
                       </td>
                       <td>
@@ -594,21 +599,9 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                            <h6 class="mb-0 text-sm">استرجاع</h6>
                           </div>
                         </div>
-                      </td>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div class="d-flex flex-column justify-content-center">
-                            <span class="page-item" >
-                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
-                            </span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">موظف</p>
                       </td>
 
                       <td class="align-middle">
@@ -621,7 +614,7 @@
                       <td>
                         <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
                           data-original-title=" ">
-                          حذف المجموعة
+                          حذف
                         </a>
                       </td>
                       <td>
@@ -646,21 +639,9 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                            <h6 class="mb-0 text-sm">استرجاع</h6>
                           </div>
                         </div>
-                      </td>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div class="d-flex flex-column justify-content-center">
-                            <span class="page-item" >
-                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
-                            </span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">موظف</p>
                       </td>
 
                       <td class="align-middle">
@@ -673,7 +654,7 @@
                       <td>
                         <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
                           data-original-title=" ">
-                          حذف المجموعة
+                          حذف
                         </a>
                       </td>
                       <td>
@@ -698,21 +679,9 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                            <h6 class="mb-0 text-sm">استرجاع</h6>
                           </div>
                         </div>
-                      </td>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div class="d-flex flex-column justify-content-center">
-                            <span class="page-item" >
-                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
-                            </span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">موظف</p>
                       </td>
 
                       <td class="align-middle">
@@ -725,7 +694,7 @@
                       <td>
                         <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
                           data-original-title=" ">
-                          حذف المجموعة
+                          حذف
                         </a>
                       </td>
                       <td>
@@ -750,21 +719,9 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                            <h6 class="mb-0 text-sm">استرجاع</h6>
                           </div>
                         </div>
-                      </td>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div class="d-flex flex-column justify-content-center">
-                            <span class="page-item" >
-                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
-                            </span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">موظف</p>
                       </td>
 
                       <td class="align-middle">
@@ -777,7 +734,7 @@
                       <td>
                         <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
                           data-original-title=" ">
-                          حذف المجموعة
+                          حذف
                         </a>
                       </td>
                       <td>
@@ -802,21 +759,9 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm"> الموظفين </h6>
+                            <h6 class="mb-0 text-sm">استرجاع</h6>
                           </div>
                         </div>
-                      </td>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div class="d-flex flex-column justify-content-center">
-                            <span class="page-item" >
-                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
-                            </span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">موظف</p>
                       </td>
 
                       <td class="align-middle">
@@ -829,7 +774,7 @@
                       <td>
                         <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
                           data-original-title=" ">
-                          حذف المجموعة
+                          حذف
                         </a>
                       </td>
                       <td>
@@ -844,61 +789,9 @@
                       </td>
                     </tr>
                     <tr>
+                      <td colspan="4"></td>
                       <td>
-                        <div class="d-flex px-2 py-1">
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm"> 1 </h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm"> الموظفين </h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div class="d-flex flex-column justify-content-center">
-                            <span class="page-item" >
-                              <a class="page-link" href="javascript:;" style="background-color: blue;"></a>
-                            </span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">موظف</p>
-                      </td>
-
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                          data-original-title="Edit user">
-                          تعديل
-                        </a>
-
-                      </td>
-                      <td>
-                        <a href="javascript:;" class="text-danger font-weight-bold text-xs " data-toggle="tooltip"
-                          data-original-title=" ">
-                          حذف المجموعة
-                        </a>
-                      </td>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div class="d-flex flex-column justify-content-center">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                            </div>
-                          </div>
-                        </div>
-
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="6"></td>
-                      <td>
-                        <button type="button" class="btn bg-gradient-danger" type="submit"> حذف المحدد</button>
+                        <button type="button" class="btn bg-gradient-danger" type="submit">حذف</button>
                       </td>
                     </tr>
                   </tbody>
